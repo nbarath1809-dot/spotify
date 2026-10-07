@@ -1,0 +1,89 @@
+@charset "ISO-8859-1";
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    height:100vh;
+
+    background:linear-gradient(135deg,#f4f4f4,#dcdcdc);
+
+}
+
+.expired-box{
+
+    width:480px;
+
+    background:white;
+
+    padding:45px;
+
+    text-align:center;
+
+    border-radius:18px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+
+}
+
+.icon{
+
+    font-size:45px;
+
+    margin-bottom:20px;
+
+}
+
+h1{
+
+    color:#e53935;
+
+    margin-bottom:20px;
+
+}
+
+p{
+
+    font-size:20px;
+
+    color:#555;
+
+    line-height:30px;
+
+    margin-bottom:35px;
+
+}
+
+.login-btn{
+
+    display:inline-block;
+
+    padding:14px 35px;
+
+    background:#1DB954;
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:20px;
+
+    border-radius:8px;
+
+    transition:.3s;
+
+}
+
+.login-btn:hover{
+
+    background:#169c46;
+
+}

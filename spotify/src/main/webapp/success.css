@@ -1,0 +1,138 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+
+    background:#121212;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    height:100vh;
+
+}
+
+.container{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.success-card{
+
+    width:500px;
+
+    background:#181818;
+
+    color:white;
+
+    text-align:center;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    box-shadow:0 0 20px rgba(0,0,0,.5);
+
+}
+
+.icon{
+
+    width:90px;
+
+    height:90px;
+
+    background:#1DB954;
+
+    border-radius:50%;
+
+    margin:auto;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:45px;
+
+    color:white;
+
+}
+
+h1{
+
+    color:#1DB954;
+
+    margin-top:20px;
+
+}
+
+h2{
+
+    margin-top:20px;
+
+}
+
+h3{
+
+    margin:20px 0;
+
+    color:#ffffff;
+
+}
+
+.msg{
+
+    color:#cccccc;
+
+    margin-bottom:30px;
+
+    line-height:25px;
+
+}
+
+.buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+}
+
+.btn{
+
+    text-decoration:none;
+
+    background:#1DB954;
+
+    color:white;
+
+    padding:12px 22px;
+
+    border-radius:8px;
+
+    transition:.3s;
+
+}
+
+.btn:hover{
+
+    background:#169944;
+
+}

@@ -1,0 +1,9 @@
+<!ELEMENT feedback (user*)>
+
+<!ELEMENT user (name, email, message)>
+
+<!ELEMENT name (#PCDATA)>
+
+<!ELEMENT email (#PCDATA)>
+
+<!ELEMENT message (#PCDATA)>

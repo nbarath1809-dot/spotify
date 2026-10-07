@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="feedbacks">
+
+        <xs:complexType>
+
+            <xs:sequence>
+
+                <xs:element name="feedback"
+                            minOccurs="0"
+                            maxOccurs="unbounded">
+
+                    <xs:complexType>
+
+                        <xs:sequence>
+
+                            <xs:element name="username"
+                                        type="xs:string"/>
+
+                            <xs:element name="song"
+                                        type="xs:string"/>
+
+                            <xs:element name="rating">
+
+                                <xs:simpleType>
+
+                                    <xs:restriction base="xs:integer">
+
+                                        <xs:minInclusive value="1"/>
+                                        <xs:maxInclusive value="5"/>
+
+                                    </xs:restriction>
+
+                                </xs:simpleType>
+
+                            </xs:element>
+
+                            <xs:element name="comment"
+                                        type="xs:string"/>
+
+                            <xs:element name="recommendation">
+
+                                <xs:simpleType>
+
+                                    <xs:restriction base="xs:string">
+
+                                        <xs:enumeration value="Yes"/>
+                                        <xs:enumeration value="No"/>
+
+                                    </xs:restriction>
+
+                                </xs:simpleType>
+
+                            </xs:element>
+
+                            <xs:element name="category">
+
+                                <xs:simpleType>
+
+                                    <xs:restriction base="xs:string">
+
+                                        <xs:enumeration value="Music Quality"/>
+                                        <xs:enumeration value="Audio Quality"/>
+                                        <xs:enumeration value="Application Experience"/>
+                                        <xs:enumeration value="Search"/>
+                                        <xs:enumeration value="Playlist"/>
+                                        <xs:enumeration value="Other"/>
+
+                                    </xs:restriction>
+
+                                </xs:simpleType>
+
+                            </xs:element>
+
+                        </xs:sequence>
+
+                    </xs:complexType>
+
+                </xs:element>
+
+            </xs:sequence>
+
+        </xs:complexType>
+
+    </xs:element>
+
+</xs:schema>
